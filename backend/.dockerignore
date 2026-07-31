@@ -1,0 +1,12 @@
+venv/
+__pycache__/
+*.pyc
+
+uploads/
+runs/
+predictions/
+
+.git
+.gitignore
+
+README.md
