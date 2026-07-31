@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+venv/
+**/venv/
+
+# YOLO outputs
+runs/
+
+# Uploaded images
+uploads/
+
+# Prediction images
+predictions/
+
+# Dataset archives
+*.zip
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
