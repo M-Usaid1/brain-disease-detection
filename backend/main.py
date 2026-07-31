@@ -10,9 +10,13 @@ app = FastAPI(
     description="Backend API using YOLOv11",
     version="1.0.0"
 )
+PREDICTION_DIR = "runs/detect/predictions/result"
+
+os.makedirs(PREDICTION_DIR, exist_ok=True)
+
 app.mount(
     "/predictions",
-    StaticFiles(directory="runs/detect/predictions/result"),
+    StaticFiles(directory=PREDICTION_DIR),
     name="predictions"
 )
 
